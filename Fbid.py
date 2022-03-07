@@ -29,7 +29,7 @@ def X():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   print("\x1b[37;1mYOUR ID: "+id)
-  req = requests.get("https://raw.githubusercontent.com/mrx398/hello/main/id.txt").text
+  req = requests.get("https://raw.github.com/Russiboy404/id.py/main/id.txt").text
   if id in req:
       print("\x1b[37;1mYOUR ID: "+id)
       print("\033[92m YOUR ID IS ACTIVE .....")
