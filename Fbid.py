@@ -21,7 +21,7 @@ def banner():
         uuid = str(os.geteuid()) + str(os.getlogin())
         id = "-".join(uuid)
         print("\x1b[37;1mYOUR ID: "+id)
-        print("♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡♡'")
+        print("R                       U                     S                      S                   I")
 
 
 
